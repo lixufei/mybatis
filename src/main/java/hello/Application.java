@@ -25,8 +25,8 @@ public class Application {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         try {
             UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-            User user = new User("lisi", new Integer(25));
-            userMapper.insertUser(user);
+            User user = new User("xufei", new Integer(25));
+            userMapper.insert(user);
             sqlSession.commit();// 这里一定要提交，不然数据进不去数据库中
         } finally {
             sqlSession.close();

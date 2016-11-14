@@ -29,8 +29,8 @@
     </environments>
 
     <mappers>
-        <!--<package name="hello.mappers"/>-->
-        <mapper resource="mappers/UserMapper.xml" />
+        <package name="hello.mappers"/>
+        <!--<mapper resource="mappers/UserMapper.xml" />-->
     </mappers>
 
 </configuration>
